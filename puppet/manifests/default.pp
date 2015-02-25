@@ -1,5 +1,5 @@
 class {
-  'apache':  default_vhost => false;
+    'apache':  default_vhost => false;
 }
 
 package { 'lynx':
