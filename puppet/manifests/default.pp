@@ -1,9 +1,10 @@
-class {
-    'apache':  default_vhost => false;
-}
+include stdlib
+include environment
 
-package { 'lynx':
-    ensure => present
+class { ubuntu: stage => setup }
+
+class {
+    'apache': default_vhost => false;
 }
 
 apache::vhost { 'app.lh':
