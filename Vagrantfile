@@ -2,8 +2,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  #config.vm.box = "ubuntu1404-i386-puppetlatest-1.0.12"
-  config.vm.box = "centos70-puppetlatest-1.0.10"
+  config.vm.box = "ubuntu1404-i386-puppetlatest-1.0.12"
+  #config.vm.box = "centos70-puppetlatest-1.0.10"
 
   config.ssh.insert_key = false
 
