@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "guestvm", destination: "/home/vagrant/guestvm"
 
   config.vm.provision "shell", inline: "mv /home/vagrant/guestvm /usr/bin && chmod 755 /usr/bin/guestvm"
-  config.vm.provision "shell", path: "script.sh"
+  config.vm.provision "shell", path: "install-puppet-modules.sh"
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
