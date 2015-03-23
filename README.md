@@ -1,12 +1,12 @@
 Vagrant Box Factory: Apache
 ===========================
 
-Underlying OS: CentOS 7 generated with https://github.com/pro-vagrant/centos
+Underlying OS: Ubuntu 14.04 generated with https://github.com/pro-vagrant/ubuntu
 
 #1. Binary version
 
 Binary version of a box is available at:
-https://vagrantcloud.com/gajdaw/boxes/apache
+http://boxes.gajdaw.pl/apache/
 
 #2. How to produce this box?
 
