@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "box-version.txt", destination: "box-version.txt"
   config.vm.provision "file", source: "box-name.txt", destination: "box-name.txt"
   config.vm.provision "file", source: "box-author.txt", destination: "box-author.txt"
+  config.vm.provision "file", source: "box-date.txt", destination: "box-date.txt"
   config.vm.provision "file", source: "guestvm", destination: "/home/vagrant/guestvm"
 
   config.vm.provision "shell", inline: "mv /home/vagrant/guestvm /usr/bin && chmod 755 /usr/bin/guestvm"
