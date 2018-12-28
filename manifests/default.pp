@@ -1,7 +1,4 @@
 include stdlib
-include environment
-
-class { ubuntu: stage => setup }
 
 class {
     'apache': default_vhost => false;
